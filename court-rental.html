@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Britton Baptist Church — Oklahoma City | Walk in the Light</title>
-  <meta name="description" content="Britton Baptist Church — a lighthouse of hope in Oklahoma City since 1941. Sunday worship, youth programs, community outreach, and indoor basketball court rental. 1141 W Britton Rd, OKC 73114.">
-  <meta name="keywords" content="Britton Baptist Church, church Oklahoma City, SBC church OKC, Baptist church north OKC, Oklahoma City church, Sunday worship OKC, youth ministry Oklahoma City">
+  <title>Basketball Court Rental OKC | Indoor Gym for Rent | Britton Baptist Church</title>
+  <meta name="description" content="Rent an indoor basketball court at Britton Baptist Church in Oklahoma City. Full-size hardwood court, $20/hr, online booking, live streaming. Perfect for pickup basketball, team practices, youth leagues, and private events. 1141 W Britton Rd, OKC 73114.">
+  <meta name="keywords" content="basketball court rental Oklahoma City, indoor gym rental OKC, rent basketball court near me, pickup basketball Oklahoma City, basketball court for rent OKC, indoor basketball court rental, gym rental north OKC, court rental 73114, Britton Baptist Church gym, hourly court rental OKC, youth basketball OKC, basketball venue rental Oklahoma City, book basketball court online OKC">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://brittonbaptist.church/">
+  <link rel="canonical" href="https://brittonbaptist.church/court-rental.html">
 
-  <meta property="og:title" content="Britton Baptist Church — Oklahoma City">
-  <meta property="og:description" content="A lighthouse of hope in Oklahoma City. Join us for worship, community, and faith. Indoor basketball court available for rental.">
+  <meta property="og:title" content="Basketball Court Rental OKC | Britton Baptist Church">
+  <meta property="og:description" content="Rent an indoor basketball court in Oklahoma City. $20/hr, online booking, live streaming. Book at Britton Baptist Church.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brittonbaptist.church/">
+  <meta property="og:url" content="https://brittonbaptist.church/court-rental.html">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Church",
-    "name": "Britton Baptist Church",
-    "description": "Southern Baptist church serving Oklahoma City since 1941. Worship services, youth programs, community outreach, and indoor basketball court rental.",
-    "url": "https://brittonbaptist.church",
+    "@type": "SportsActivityLocation",
+    "name": "Britton Baptist Church — Indoor Basketball Court Rental",
+    "description": "Rent an indoor basketball court in Oklahoma City at Britton Baptist Church. Full-size hardwood court, $20/hr, online booking via Sked.Earth, live streaming via Pickup.Earth.",
+    "url": "https://brittonbaptist.church/court-rental.html",
     "telephone": "+1-405-842-3511",
     "address": {
       "@type": "PostalAddress",
@@ -35,7 +35,70 @@
       "@type": "GeoCoordinates",
       "latitude": 35.5659,
       "longitude": -97.5326
+    },
+    "sport": "Basketball",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Indoor Basketball Court" },
+      { "@type": "LocationFeatureSpecification", "name": "Hardwood Floor" },
+      { "@type": "LocationFeatureSpecification", "name": "Live Streaming" },
+      { "@type": "LocationFeatureSpecification", "name": "Online Booking" },
+      { "@type": "LocationFeatureSpecification", "name": "Free Parking" }
+    ],
+    "isAccessibleForFree": false,
+    "priceRange": "$20/hr",
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": "https://sked.earth/venues/ewuQ5Va2X1bDRvuVkf5n"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where can I rent an indoor basketball court in Oklahoma City?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Britton Baptist Church at 1141 W Britton Rd in North Oklahoma City offers a full-size indoor basketball court for hourly rental at $20/hour. Book online at sked.earth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to rent a basketball court at Britton Baptist Church?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Court rental is $20 per hour, bookable in 30-minute increments at $10 per slot. Book online through the Sked.Earth widget on this page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be a church member to rent the court?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The basketball court is open to everyone in the Oklahoma City community. Church membership is not required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there pickup basketball in Oklahoma City?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Britton Baptist Church hosts pickup basketball sessions in North OKC. Book a session through Sked.Earth or check the schedule for open play times."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I live stream my basketball game?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The court features professional cameras powered by Pickup.Earth. Games can be live streamed and recorded, with footage archived for 30 days."
+        }
+      }
+    ]
   }
   </script>
 
@@ -982,10 +1045,26 @@
   </footer>
 
   <script>
+    // FAQ toggles
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
     document.querySelectorAll('.nav-menu a').forEach(link => {
       link.addEventListener('click', () => {
         document.getElementById('navMenu').classList.remove('open');
       });
+    });
+    // Auto-resize sked.earth iframe
+    window.addEventListener("message", function(e) {
+      if (e.data && e.data.type === "sked-resize") {
+        var f = document.querySelector("iframe[src*=\'sked.earth\']");
+        if (f) f.style.height = e.data.height + "px";
+      }
     });
   </script>
 
