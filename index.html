@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO: Church-first meta, court rental as secondary -->
   <title>Britton Baptist Church — Oklahoma City | Walk in the Light</title>
   <meta name="description" content="Britton Baptist Church — a lighthouse of hope in Oklahoma City since 1941. Sunday worship, youth programs, community outreach, and indoor basketball court rental. 1141 W Britton Rd, OKC 73114.">
-  <meta name="keywords" content="Britton Baptist Church, church Oklahoma City, SBC church OKC, Baptist church north OKC, Oklahoma City church, Sunday worship OKC, youth ministry Oklahoma City">
+  <meta name="keywords" content="Britton Baptist Church, church Oklahoma City, SBC church OKC, Baptist church north OKC, Oklahoma City church, basketball court rental OKC, indoor gym rental Oklahoma City, Sunday worship OKC, youth ministry Oklahoma City">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://brittonbaptist.church/">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Britton Baptist Church — Oklahoma City">
   <meta property="og:description" content="A lighthouse of hope in Oklahoma City. Join us for worship, community, and faith. Indoor basketball court available for rental.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brittonbaptist.church/">
+  <meta property="og:url" content="https://brittonbaptist.org">
 
+  <!-- Church Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Church",
     "name": "Britton Baptist Church",
     "description": "Southern Baptist church serving Oklahoma City since 1941. Worship services, youth programs, community outreach, and indoor basketball court rental.",
-    "url": "https://brittonbaptist.church",
+    "url": "https://brittonbaptist.org",
     "telephone": "+1-405-842-3511",
     "address": {
       "@type": "PostalAddress",
@@ -35,11 +37,119 @@
       "@type": "GeoCoordinates",
       "latitude": 35.5659,
       "longitude": -97.5326
-    }
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:30",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "17:00",
+        "closes": "19:30"
+      }
+    ]
   }
   </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Court Rental Schema (SportsActivityLocation) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Britton Baptist Church — Indoor Basketball Court Rental",
+    "description": "Rent an indoor basketball court in Oklahoma City at Britton Baptist Church. Full-size hardwood court available for pickup basketball, team practices, youth leagues, birthday parties, and private events. Online booking via Sked.Earth. Live streaming via Pickup.Earth.",
+    "url": "https://brittonbaptist.org/#court-rental",
+    "telephone": "+1-405-842-3511",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1141 W Britton Rd",
+      "addressLocality": "Oklahoma City",
+      "addressRegion": "OK",
+      "postalCode": "73114",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.5659,
+      "longitude": -97.5326
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Indoor Basketball Court" },
+      { "@type": "LocationFeatureSpecification", "name": "Hardwood Floor" },
+      { "@type": "LocationFeatureSpecification", "name": "Live Streaming Cameras" },
+      { "@type": "LocationFeatureSpecification", "name": "Free Parking" },
+      { "@type": "LocationFeatureSpecification", "name": "Climate Controlled Gym" }
+    ],
+    "sport": "Basketball",
+    "isAccessibleForFree": false,
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- FAQ Schema for Court Rental SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where can I rent an indoor basketball court in Oklahoma City?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Britton Baptist Church at 1141 W Britton Rd in North Oklahoma City offers an indoor basketball court for hourly rental. The full-size hardwood court features regulation hoops, climate control, free parking, and optional live streaming. Book online at sked.earth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to rent a basketball court at Britton Baptist Church?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Britton Baptist Church offers competitive hourly rates for court rental. Visit the booking page on our website or contact us at (405) 842-3511 for current pricing and group rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I live stream my basketball game at Britton Baptist Church?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The court is equipped with professional cameras powered by Pickup.Earth. Games can be live streamed and recorded, with footage archived for 30 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be a church member to rent the court?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The basketball court is open to everyone in the Oklahoma City community. Church membership is not required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there pickup basketball in Oklahoma City?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Britton Baptist Church hosts pickup basketball sessions and open gym in North OKC. Book a session through Sked.Earth or check the schedule for open play times."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the service times at Britton Baptist Church?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sunday School at 9:30 AM, Sunday Morning Worship at 10:50 AM, Sunday Evening Worship at 6:00 PM. Wednesday: Fellowship Meal at 5:00 PM, Children & Youth at 6:00 PM, Midweek Service at 6:15 PM."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="canonical" href="https://brittonbaptist.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..700;1,6..12,300..700&display=swap" rel="stylesheet">
 
@@ -164,6 +274,8 @@
     /* ================================
        PAGE SYSTEM
     ================================ */
+    .page { display: none; }
+    .page.active { display: block; }
 
     /* ================================
        HERO — Church-first
@@ -936,9 +1048,10 @@
 </head>
 <body>
 
+  <!-- ========== NAVIGATION ========== -->
   <nav class="site-nav">
     <div class="nav-wrap">
-      <a href="/" class="nav-brand">
+      <a href="#" class="nav-brand" onclick="showPage('home');return false;">
         <div class="lighthouse-icon">
           <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="13" y="8" width="10" height="22" rx="1" fill="#C9A84C" opacity="0.9"/>
@@ -960,11 +1073,11 @@
         </div>
       </a>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#" href="/#about">About</a></li>
-        <li><a href="#" href="/#ministries">Ministries</a></li>
-        <li><a href="#" href="/court-rental.html">Court Rental</a></li>
-        <li><a href="#" href="/#contact">Contact</a></li>
-        <li><a href="#" href="/court-rental.html#booking" class="nav-cta">Book a Court</a></li>
+        <li><a href="#" onclick="showPage('home');scrollToId('about');return false;">About</a></li>
+        <li><a href="#" onclick="showPage('home');scrollToId('ministries');return false;">Ministries</a></li>
+        <li><a href="#" onclick="showPage('court');return false;">Court Rental</a></li>
+        <li><a href="#" onclick="showPage('home');scrollToId('contact');return false;">Contact</a></li>
+        <li><a href="#" onclick="showPage('court');scrollToId('booking');return false;" class="nav-cta">Book a Court</a></li>
       </ul>
       <button class="burger" onclick="document.getElementById('navMenu').classList.toggle('open')" aria-label="Menu">
         <div></div><div></div><div></div>
@@ -972,8 +1085,436 @@
     </div>
   </nav>
 
+  <!-- ================================
+       HOME PAGE
+  ================================ -->
+  <div class="page active" id="page-home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-beams"></div>
+      <div class="hero-texture"></div>
+      <div class="hero-inner">
+        <div>
+          <div class="hero-tag">Southern Baptist Church &bull; Est. 1941</div>
+          <h1>Walk in the <em>Light</em></h1>
+          <p class="hero-desc">Britton Baptist Church is a lighthouse of hope in North Oklahoma City. We are a multi-generational, welcoming congregation rooted in faith, fellowship, and serving our community.</p>
+          <div class="hero-btns">
+            <a href="#" onclick="showPage('home');scrollToId('about');return false;" class="btn btn-gold">Plan Your Visit &rarr;</a>
+            <a href="#" onclick="showPage('court');return false;" class="btn btn-ghost">Rent Our Court</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-head">
+            <div class="dot"></div>
+            <span>This Week at BBC</span>
+          </div>
+          <div class="hero-card-body">
+            <h3>Service Times</h3>
+            <div class="sched-divider">Sunday</div>
+            <div class="sched-row"><span class="t">9:30 AM</span><span class="e">Sunday School</span></div>
+            <div class="sched-row"><span class="t">10:50 AM</span><span class="e">Morning Worship</span></div>
+            <div class="sched-row"><span class="t">6:00 PM</span><span class="e">Evening Worship</span></div>
+            <div class="sched-divider">Wednesday</div>
+            <div class="sched-row"><span class="t">5:00 PM</span><span class="e">Fellowship Meal</span></div>
+            <div class="sched-row"><span class="t">6:00 PM</span><span class="e">Children & Youth</span></div>
+            <div class="sched-row"><span class="t">6:15 PM</span><span class="e">Midweek Service</span></div>
+          </div>
+          <div class="hero-card-foot">
+            <a href="tel:4058423511">Call (405) 842-3511 &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sect about-sect" id="about">
+      <div class="sect-inner">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="label">Our Story</div>
+            <h2 class="sect-title">A Lighthouse of Hope Since 1941</h2>
+            <p>For over 80 years, Britton Baptist Church has been shining God's light in North Oklahoma City. What began as a small congregation on Britton Road has grown into a vibrant, faith-driven community committed to serving people from all walks of life.</p>
+            <p>We believe that God is still at work — in our church, in our neighborhood, and in the lives of everyone who walks through our doors. Whether you're searching for answers, looking for community, or deepening your faith, you're welcome here.</p>
+            <div class="verse-block">
+              <q>Walk in the light, as He is in the light, and we have fellowship with one another.</q>
+              <cite>1 John 1:7</cite>
+            </div>
+            <p>Our doors are open to everyone. Come as you are and discover what it means to walk in the light together.</p>
+          </div>
+          <div>
+            <div class="abc-plan">
+              <h3>How to Become a Christian</h3>
+              <div class="abc-step">
+                <div class="abc-letter">A</div>
+                <div>
+                  <h4>Admit to God you are a sinner</h4>
+                  <p>Romans 3:23</p>
+                </div>
+              </div>
+              <div class="abc-step">
+                <div class="abc-letter">B</div>
+                <div>
+                  <h4>Believe that Jesus died & rose again</h4>
+                  <p>Romans 5:8</p>
+                </div>
+              </div>
+              <div class="abc-step">
+                <div class="abc-letter">C</div>
+                <div>
+                  <h4>Confess your faith in Jesus Christ</h4>
+                  <p>Romans 10:9-13</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINISTRIES -->
+    <section class="sect ministries-sect" id="ministries">
+      <div class="sect-inner">
+        <div class="label">Ministries & Community</div>
+        <h2 class="sect-title">Serving Oklahoma City Together</h2>
+        <p class="sect-sub">From children's ministry to community outreach, Britton Baptist is committed to meeting people where they are and walking alongside them.</p>
+
+        <div class="min-cards">
+          <article class="min-card">
+            <div class="min-icon">⛪</div>
+            <h4>Worship & Teaching</h4>
+            <p>Passionate worship spanning multiple genres and expository Bible teaching. Sunday mornings and evenings, plus Wednesday midweek service with Pastor Belicek.</p>
+          </article>
+          <article class="min-card">
+            <div class="min-icon">👦</div>
+            <h4>Children & Youth</h4>
+            <p>Age-appropriate programs for kids and teens every Wednesday evening and Sunday morning. Building faith, friendships, and character in a safe environment.</p>
+          </article>
+          <article class="min-card">
+            <div class="min-icon">🤝</div>
+            <h4>Missions & Outreach</h4>
+            <p>Serving our neighbors locally and globally — from food drives and community events in OKC to international missions reaching as far as the Philippines.</p>
+          </article>
+        </div>
+
+        <!-- Court rental teaser -->
+        <div class="court-teaser">
+          <div>
+            <h3>Our Gym is Open — <em>Rent the Court</em></h3>
+            <p>Our indoor basketball court is available for pickup games, team practices, youth leagues, birthday parties, and community events. Book online with live streaming available.</p>
+            <a href="#" onclick="showPage('court');return false;" class="btn btn-gold">Court Rental Info &rarr;</a>
+          </div>
+          <div class="court-mini-features">
+            <div class="cmf">
+              <div class="cmf-icon">🏀</div>
+              <h5>Full-Size Court</h5>
+              <p>Hardwood floor</p>
+            </div>
+            <div class="cmf">
+              <div class="cmf-icon">📹</div>
+              <h5>Live Streaming</h5>
+              <p>Pickup.Earth cameras</p>
+            </div>
+            <div class="cmf">
+              <div class="cmf-icon">📅</div>
+              <h5>Book Online</h5>
+              <p>Sked.Earth</p>
+            </div>
+            <div class="cmf">
+              <div class="cmf-icon">🅿️</div>
+              <h5>Free Parking</h5>
+              <p>On-site lot</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sect contact-sect" id="contact">
+      <div class="sect-inner">
+        <div class="label">Visit Us</div>
+        <h2 class="sect-title">Come Walk in the Light</h2>
+        <p class="sect-sub">We'd love to welcome you — to a service, a community event, or a pickup game. Here's how to find us.</p>
+        <div class="contact-grid">
+          <div class="contact-rows">
+            <div class="c-row">
+              <div class="c-row-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>1141 W Britton Rd<br>Oklahoma City, OK 73114</p>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:4058423511">(405) 842-3511</a>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">🕐</div>
+              <div>
+                <h4>Sunday Services</h4>
+                <p>9:30 AM, 10:50 AM, 6:00 PM</p>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">🍽️</div>
+              <div>
+                <h4>Wednesday</h4>
+                <p>Meal 5PM · Youth 6PM · Service 6:15PM</p>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">⛪</div>
+              <div>
+                <h4>Denomination</h4>
+                <p>Southern Baptist Convention (SBC)</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.5!2d-97.535!3d35.566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21bdc87d8c78d%3A0xb0d77a6a8bfbda03!2sBritton%20Baptist%20Church!5e0!3m2!1sen!2sus!4v1"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Britton Baptist Church - 1141 W Britton Rd, Oklahoma City, OK 73114"
+            ></iframe>
+            <script>window.addEventListener("message",function(e){if(e.data&&e.data.type==="sked-resize"){var f=document.querySelector("iframe[src*=\"sked.earth\"]");if(f)f.style.height=e.data.height+"px";}});</script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-home -->
 
 
+  <!-- ================================
+       COURT RENTAL PAGE (SEO-HEAVY)
+  ================================ -->
+  <div class="page" id="page-court">
+
+    <!-- Court Hero -->
+    <section class="court-hero">
+      <div class="court-hero-inner">
+        <div class="breadcrumb">
+          <a href="#" onclick="showPage('home');return false;">Britton Baptist Church</a> / Basketball Court Rental
+        </div>
+        <h1>Indoor Basketball Court <em>Rental</em> in Oklahoma City</h1>
+        <p>Rent a full-size indoor basketball court at Britton Baptist Church in North OKC. Hourly booking, live streaming, and a community-first environment. Perfect for pickup basketball, team practices, leagues, youth sports, and private events.</p>
+        <a href="#" onclick="scrollToId('booking');return false;" class="btn btn-gold">Book Court Time &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Court Features -->
+    <section class="sect court-features-sect" id="court-features">
+      <div class="sect-inner">
+        <div class="label">Court Amenities</div>
+        <h2 class="sect-title">Everything You Need to Play</h2>
+        <p class="sect-sub">Our gym at 1141 W Britton Rd offers a regulation indoor basketball court in a clean, safe, faith-based environment — open to everyone in the OKC community.</p>
+
+        <div class="court-feat-grid">
+          <div class="court-visual-block">
+            <svg class="court-svg" width="200" height="260" viewBox="0 0 200 260" fill="none">
+              <rect x="10" y="10" width="180" height="240" stroke="#C9A84C" stroke-width="2" rx="2"/>
+              <line x1="10" y1="130" x2="190" y2="130" stroke="#C9A84C" stroke-width="2"/>
+              <circle cx="100" cy="130" r="30" stroke="#C9A84C" stroke-width="2"/>
+              <rect x="60" y="10" width="80" height="60" stroke="#C9A84C" stroke-width="2"/>
+              <rect x="60" y="190" width="80" height="60" stroke="#C9A84C" stroke-width="2"/>
+              <path d="M60 70 A40 40 0 0 0 140 70" stroke="#C9A84C" stroke-width="2" fill="none"/>
+              <path d="M60 190 A40 40 0 0 1 140 190" stroke="#C9A84C" stroke-width="2" fill="none"/>
+            </svg>
+            <h3>Full-Size Hardwood Court</h3>
+            <p>Regulation hoops, wooden floor, scoreboard, and climate-controlled gym. Easy access from Britton Rd, I-235, and Memorial Rd with free on-site parking.</p>
+          </div>
+          <div class="feat-list">
+            <article class="feat-item">
+              <div class="feat-item-icon">🏀</div>
+              <div>
+                <h4>Pickup Basketball & Open Gym</h4>
+                <p>Book a session for pickup basketball in Oklahoma City. All ages and skill levels welcome. Regular open gym hours available.</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <div class="feat-item-icon">📹</div>
+              <div>
+                <h4>Live Streaming & Game Footage</h4>
+                <p>Professional cameras powered by Pickup.Earth. Every session can be live streamed, recorded, and archived for 30 days.</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <div class="feat-item-icon">📅</div>
+              <div>
+                <h4>Instant Online Booking</h4>
+                <p>Reserve your court time through Sked.Earth. No phone calls needed — pick your slot, pay securely, and get instant confirmation.</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <div class="feat-item-icon">🎉</div>
+              <div>
+                <h4>Events & Private Rentals</h4>
+                <p>Birthday parties, team-building, youth tournaments, church group events. Flexible pricing for extended or recurring bookings.</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <div class="feat-item-icon">🏐</div>
+              <div>
+                <h4>Multi-Sport Use</h4>
+                <p>Court is also available for volleyball, futsal, dodgeball, and other indoor sports. Contact us for setup details.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking / Sked.Earth Widget -->
+    <section class="sect booking-sect" id="booking">
+      <div class="sect-inner">
+        <div class="label">Reserve Online</div>
+        <h2 class="sect-title">Book a Basketball Court in Oklahoma City</h2>
+        <p class="sect-sub">Select your date and time below. Secure payment. Instant confirmation. No membership required.</p>
+
+        <div class="booking-frame">
+          <div class="booking-bar">
+            <h3>Court Reservation — Britton Baptist Church</h3>
+            <div class="powered">Powered by <b>Sked.Earth</b></div>
+          </div>
+          <div class="booking-body">
+            <iframe src="https://sked.earth/venues/ewuQ5Va2X1bDRvuVkf5n/embed" width="100%" height="620" style="border:none;border-radius:12px;background:#0a0a0f;" loading="lazy" allow="payment" title="Book Britton Baptist Church Basketball Court on Sked.earth"></iframe>
+            <script>window.addEventListener("message",function(e){if(e.data&&e.data.type==="sked-resize"){var f=document.querySelector("iframe[src*=\"sked.earth\"]");if(f)f.style.height=e.data.height+"px";}});</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Streaming -->
+    <section class="sect stream-sect" id="livestream">
+      <div class="sect-inner">
+        <div class="stream-grid">
+          <div class="stream-preview">
+            <div class="floor"></div>
+            <div class="lines"></div>
+            <div class="live-badge">LIVE</div>
+            <div class="play-circle"></div>
+          </div>
+          <div>
+            <div class="label">Live Streaming</div>
+            <h2 class="sect-title">Watch Games Live from Anywhere</h2>
+            <p class="sect-sub">Our court is wired with professional cameras powered by Pickup.Earth. Friends, family, and scouts can watch live from anywhere in the world.</p>
+            <ul class="check-list">
+              <li>HD live streaming of every booked session</li>
+              <li>30-day video archive & on-demand playback</li>
+              <li>Downloadable game footage & highlights</li>
+              <li>Player stat tracking & AI analytics</li>
+              <li>Share clips on social media</li>
+            </ul>
+            <div style="margin-top:28px;">
+              <a href="https://pickup.earth" target="_blank" class="btn btn-gold">Watch on Pickup.Earth &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (SEO) -->
+    <section class="sect faq-sect" id="faq">
+      <div class="sect-inner">
+        <div class="label">Frequently Asked Questions</div>
+        <h2 class="sect-title">Basketball Court Rental FAQ</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q">Where can I rent an indoor basketball court in Oklahoma City?</div>
+            <div class="faq-a"><div class="faq-a-inner">Britton Baptist Church at 1141 W Britton Rd in North Oklahoma City offers a full-size indoor basketball court for hourly rental. The hardwood court features regulation hoops, climate control, free parking, and optional live streaming through Pickup.Earth. Book online through our Sked.Earth widget.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">How do I book a basketball court at Britton Baptist Church?</div>
+            <div class="faq-a"><div class="faq-a-inner">Use the Sked.Earth booking widget on this page. Select your date and time, pay securely online, and receive instant confirmation. You can also call (405) 842-3511 for assistance or custom event inquiries.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Do I need to be a church member to rent the court?</div>
+            <div class="faq-a"><div class="faq-a-inner">No. The basketball court is open to everyone in the Oklahoma City community. Church membership is not required. Everyone is welcome at Britton Baptist.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Is there pickup basketball near me in OKC?</div>
+            <div class="faq-a"><div class="faq-a-inner">Yes! Britton Baptist Church hosts pickup basketball sessions and open gym times in North Oklahoma City. Book a session through Sked.Earth or contact us for the current open gym schedule.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Can I live stream my basketball game?</div>
+            <div class="faq-a"><div class="faq-a-inner">Yes. Our court features professional cameras powered by Pickup.Earth. Games can be live streamed in HD, with footage archived for 30 days and available for download. Share highlights with friends and family anywhere in the world.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Can I rent the gym for events other than basketball?</div>
+            <div class="faq-a"><div class="faq-a-inner">Absolutely. The gym is available for volleyball, futsal, birthday parties, youth sports events, church group activities, corporate team-building, and more. Contact us for custom event pricing and availability.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Where is Britton Baptist Church located?</div>
+            <div class="faq-a"><div class="faq-a-inner">We're at 1141 W Britton Rd, Oklahoma City, OK 73114 — in North OKC near the intersections of Britton Rd, May Ave, and I-235. Free parking is available on-site. We're easily accessible from Edmond, The Village, Nichols Hills, and the greater OKC metro area.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">What are the church service times at Britton Baptist?</div>
+            <div class="faq-a"><div class="faq-a-inner">Sunday School at 9:30 AM, Morning Worship at 10:50 AM, Evening Worship at 6:00 PM. Wednesday: Fellowship Meal at 5:00 PM, Children & Youth at 6:00 PM, Midweek Service at 6:15 PM. Everyone is welcome.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (duplicated for court page SEO with court-specific context) -->
+    <section class="sect contact-sect" id="court-contact">
+      <div class="sect-inner">
+        <div class="label">Location & Contact</div>
+        <h2 class="sect-title">Find the Court</h2>
+        <p class="sect-sub">The basketball court is inside Britton Baptist Church. Free parking, easy access from I-235 and Britton Rd.</p>
+        <div class="contact-grid">
+          <div class="contact-rows">
+            <div class="c-row">
+              <div class="c-row-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>1141 W Britton Rd<br>Oklahoma City, OK 73114</p>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:4058423511">(405) 842-3511</a>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">🌐</div>
+              <div>
+                <h4>Online Booking</h4>
+                <a href="https://sked.earth" target="_blank">sked.earth</a>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-row-icon">🏀</div>
+              <div>
+                <h4>Live Streaming</h4>
+                <a href="https://pickup.earth" target="_blank">pickup.earth</a>
+              </div>
+            </div>
+          </div>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.5!2d-97.535!3d35.566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21bdc87d8c78d%3A0xb0d77a6a8bfbda03!2sBritton%20Baptist%20Church!5e0!3m2!1sen!2sus!4v1"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Basketball Court Rental - Britton Baptist Church - 1141 W Britton Rd OKC"
+            ></iframe>
+            <script>window.addEventListener("message",function(e){if(e.data&&e.data.type==="sked-resize"){var f=document.querySelector("iframe[src*=\"sked.earth\"]");if(f)f.style.height=e.data.height+"px";}});</script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-court -->
+
+  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 Britton Baptist Church &middot; 1141 W Britton Rd, Oklahoma City, OK 73114 &middot; <a href="tel:4058423511">(405) 842-3511</a></p>
@@ -982,9 +1523,36 @@
   </footer>
 
   <script>
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('navMenu').classList.remove('open');
+    // === Page routing ===
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('page-' + id);
+      if (target) target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Close mobile menu
+      document.getElementById('navMenu').classList.remove('open');
+      // Update document title for SEO context
+      if (id === 'court') {
+        document.title = 'Basketball Court Rental OKC | Indoor Gym for Rent | Britton Baptist Church';
+      } else {
+        document.title = 'Britton Baptist Church — Oklahoma City | Walk in the Light';
+      }
+    }
+
+    function scrollToId(id) {
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+
+    // === FAQ toggles ===
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
       });
     });
   </script>
