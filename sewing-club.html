@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sewing & Quilting Club | Britton Baptist Church | Oklahoma City</title>
+  <meta name="description" content="Join the sewing and quilting club at Britton Baptist Church in Oklahoma City. Dedicated sewing rooms, machines, and a welcoming community. Create quilts and crafts for the community. All skill levels welcome.">
+  <meta name="keywords" content="church sewing club Oklahoma City, quilting group OKC, sewing ministry, church quilting club, Britton Baptist sewing, knitting group Oklahoma City, craft ministry OKC">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://brittonbaptist.church/sewing-club.html">
+  <meta property="og:title" content="Sewing & Quilting Club | Britton Baptist Church | Oklahoma City">
+  <meta property="og:description" content="Join the sewing and quilting club at Britton Baptist Church in Oklahoma City. Dedicated sewing rooms, machines, and a welcoming community. Create quilts and crafts for the community. All skill levels welcome.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brittonbaptist.church/sewing-club.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..700;1,6..12,300..700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+      --deep-blue: #1B2E52;
+      --navy: #0F1F3D;
+      --royal: #2C4A7C;
+      --gold: #C9A84C;
+      --gold-light: #E2C86D;
+      --gold-pale: #F5EDDA;
+      --cream: #FBF8F1;
+      --warm-white: #FEFCF7;
+      --brick: #7A3828;
+      --brick-light: #A04E3A;
+      --sky: #D6E4F0;
+      --text: #1C1C1C;
+      --text-soft: #555;
+      --text-muted: #888;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+      --shadow-lg: 0 16px 48px rgba(0,0,0,0.10);
+      --radius: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      color: var(--text);
+      background: var(--warm-white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+
+    /* ================================
+       NAVIGATION
+    ================================ */
+    .site-nav {
+      position: fixed;
+      top: 0; width: 100%; z-index: 1000;
+      background: rgba(15, 31, 61, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      transition: background 0.3s;
+    }
+    .nav-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none;
+    }
+    /* Lighthouse icon */
+    .lighthouse-icon {
+      width: 36px; height: 36px;
+      position: relative;
+    }
+    .lighthouse-icon svg { width: 100%; height: 100%; }
+    .nav-brand-text {
+      font-family: 'Cormorant Garamond', serif;
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+    .nav-brand-text small {
+      display: block;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .nav-menu {
+      display: flex; align-items: center; gap: 8px;
+      list-style: none;
+    }
+    .nav-menu a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: all 0.2s;
+      letter-spacing: 0.02em;
+    }
+    .nav-menu a:hover {
+      color: white;
+      background: rgba(255,255,255,0.06);
+    }
+    .nav-menu .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      font-weight: 700;
+      padding: 9px 20px;
+    }
+    .nav-menu .nav-cta:hover {
+      background: var(--gold-light);
+    }
+    .burger {
+      display: none;
+      background: none; border: none; cursor: pointer; padding: 6px;
+    }
+    .burger div {
+      width: 22px; height: 2px; background: white; margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* ================================
+       PAGE SYSTEM
+    ================================ */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ================================
+       HERO — Church-first
+    ================================ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--deep-blue);
+    }
+
+    /* Lighthouse beam effect */
+    .hero-beams {
+      position: absolute;
+      top: -60px;
+      right: 15%;
+      width: 400px;
+      height: 700px;
+      opacity: 0.07;
+      background: conic-gradient(
+        from 200deg,
+        transparent 0deg,
+        var(--gold) 8deg,
+        transparent 16deg,
+        transparent 40deg,
+        var(--gold) 48deg,
+        transparent 56deg,
+        transparent 80deg,
+        var(--gold) 88deg,
+        transparent 96deg
+      );
+      animation: beamRotate 20s linear infinite;
+    }
+    @keyframes beamRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .hero-texture {
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-inner {
+      position: relative; z-index: 2;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      animation: fadeUp 0.7s ease both;
+    }
+    .hero-tag::before {
+      content: '';
+      width: 32px; height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 600;
+      color: white;
+      line-height: 1.08;
+      margin-bottom: 20px;
+      animation: fadeUp 0.7s ease 0.1s both;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.75;
+      max-width: 520px;
+      margin-bottom: 36px;
+      animation: fadeUp 0.7s ease 0.2s both;
+    }
+
+    .hero-btns {
+      display: flex; gap: 14px; flex-wrap: wrap;
+      animation: fadeUp 0.7s ease 0.3s both;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: none; cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .btn-gold {
+      background: var(--gold); color: var(--navy);
+    }
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(201,168,76,0.3);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: rgba(255,255,255,0.8);
+      border: 1.5px solid rgba(255,255,255,0.2);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.5);
+      color: white;
+    }
+    .btn-brick {
+      background: var(--brick); color: white;
+    }
+    .btn-brick:hover {
+      background: var(--brick-light);
+      transform: translateY(-1px);
+    }
+
+    /* Schedule card floating in hero */
+    .hero-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+      animation: fadeUp 0.7s ease 0.35s both;
+    }
+    .hero-card-head {
+      padding: 20px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .hero-card-head .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gold);
+      animation: pulse 2s ease infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity:1; } 50% { opacity:0.4; }
+    }
+    .hero-card-head span {
+      font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--gold);
+    }
+    .hero-card-body { padding: 24px; }
+    .hero-card-body h3 {
+      color: white; font-size: 1.35rem;
+      font-weight: 600; margin-bottom: 18px;
+    }
+    .sched-row {
+      display: flex; justify-content: space-between;
+      padding: 7px 0;
+      font-size: 0.88rem;
+    }
+    .sched-row .t {
+      color: rgba(255,255,255,0.85);
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .sched-row .e { color: rgba(255,255,255,0.45); }
+    .sched-divider {
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); opacity: 0.6;
+      margin: 12px 0 6px;
+    }
+    .hero-card-foot {
+      padding: 16px 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+    .hero-card-foot a {
+      color: var(--gold); font-size: 0.82rem;
+      font-weight: 700; text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .hero-card-foot a:hover { color: var(--gold-light); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ================================
+       CHURCH BODY SECTIONS
+    ================================ */
+    .sect {
+      padding: 96px 24px;
+    }
+    .sect-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    .label {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .sect-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .sect-sub {
+      font-size: 1rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+      max-width: 580px;
+    }
+
+    /* === About / Mission === */
+    .about-sect { background: var(--cream); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      margin-top: 48px;
+      align-items: start;
+    }
+    .about-text p {
+      font-size: 0.95rem; color: var(--text-soft);
+      line-height: 1.8; margin-bottom: 16px;
+    }
+    .verse-block {
+      background: white;
+      border-left: 4px solid var(--gold);
+      border-radius: 0 10px 10px 0;
+      padding: 24px 28px;
+      margin: 28px 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .verse-block q {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.5;
+      display: block;
+    }
+    .verse-block cite {
+      display: block; margin-top: 10px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.8rem; font-style: normal;
+      color: var(--text-muted);
+    }
+
+    .abc-plan {
+      background: var(--navy);
+      border-radius: 14px;
+      padding: 36px 32px;
+      color: white;
+    }
+    .abc-plan h3 {
+      font-size: 1.4rem; margin-bottom: 24px;
+      color: var(--gold-light);
+    }
+    .abc-step {
+      display: flex; gap: 16px; align-items: flex-start;
+      margin-bottom: 22px;
+    }
+    .abc-step:last-child { margin-bottom: 0; }
+    .abc-letter {
+      width: 38px; height: 38px; border-radius: 8px;
+      background: rgba(201,168,76,0.15);
+      color: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 700;
+      flex-shrink: 0;
+    }
+    .abc-step h4 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.92rem; font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2px;
+    }
+    .abc-step p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.4;
+    }
+
+    /* === Ministries === */
+    .ministries-sect { background: var(--warm-white); }
+    .min-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .min-card {
+      background: white;
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: 14px;
+      padding: 32px 28px;
+      transition: all 0.25s;
+    }
+    .min-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .min-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; margin-bottom: 18px;
+    }
+    .min-card:nth-child(1) .min-icon { background: rgba(44,74,124,0.08); }
+    .min-card:nth-child(2) .min-icon { background: rgba(122,56,40,0.08); }
+    .min-card:nth-child(3) .min-icon { background: rgba(201,168,76,0.1); }
+    .min-card h4 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 8px;
+    }
+    .min-card p {
+      font-size: 0.88rem; color: var(--text-soft);
+      line-height: 1.65;
+    }
+
+    /* === Court Rental Teaser on Home Page === */
+    .court-teaser {
+      background: var(--navy);
+      border-radius: 20px;
+      padding: 56px 48px;
+      margin-top: 72px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .court-teaser::after {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+    .court-teaser h3 {
+      font-size: 2rem; color: white; line-height: 1.15;
+      margin-bottom: 14px; position: relative;
+    }
+    .court-teaser h3 em { color: var(--gold); font-style: italic; }
+    .court-teaser p {
+      color: rgba(255,255,255,0.55); font-size: 0.95rem;
+      line-height: 1.7; margin-bottom: 28px; position: relative;
+    }
+    .court-teaser .btn { position: relative; }
+    .court-mini-features {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; position: relative;
+    }
+    .cmf {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 20px 18px;
+      text-align: center;
+    }
+    .cmf-icon { font-size: 24px; margin-bottom: 8px; }
+    .cmf h5 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.82rem; font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 2px;
+    }
+    .cmf p {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 0;
+    }
+
+    /* ================================
+       COURT RENTAL PAGE (SEO PAGE)
+    ================================ */
+    .court-hero {
+      padding: 140px 24px 80px;
+      background: var(--deep-blue);
+      position: relative;
+      overflow: hidden;
+    }
+    .court-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 29px, var(--gold) 29px, var(--gold) 30px),
+        repeating-linear-gradient(90deg, transparent, transparent 29px, var(--gold) 29px, var(--gold) 30px);
+    }
+    .court-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative; z-index: 2;
+    }
+    .court-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: white; font-weight: 600;
+      line-height: 1.1; margin-bottom: 18px;
+    }
+    .court-hero h1 em { color: var(--gold); font-style: italic; }
+    .court-hero p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .court-hero .breadcrumb {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 24px;
+    }
+    .court-hero .breadcrumb a {
+      color: var(--gold); text-decoration: none;
+    }
+    .court-hero .breadcrumb a:hover { text-decoration: underline; }
+
+    /* Court features */
+    .court-features-sect { background: var(--cream); }
+    .court-feat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 48px;
+      align-items: start;
+    }
+    .court-visual-block {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    /* Court diagram SVG lines */
+    .court-svg {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.12;
+    }
+    .court-visual-block h3 {
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .court-visual-block p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    .feat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .feat-item {
+      background: white;
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex; gap: 16px;
+      align-items: flex-start;
+      transition: all 0.2s;
+    }
+    .feat-item:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-sm);
+    }
+    .feat-item-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: rgba(201,168,76,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+    .feat-item h4 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 4px;
+    }
+    .feat-item p {
+      font-size: 0.85rem; color: var(--text-soft);
+      line-height: 1.55;
+    }
+
+    /* Booking section */
+    .booking-sect { background: var(--warm-white); }
+    .booking-frame {
+      margin-top: 48px;
+      background: white;
+      border-radius: 16px;
+      border: 1px solid rgba(0,0,0,0.06);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .booking-bar {
+      background: var(--navy);
+      padding: 20px 28px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .booking-bar h3 {
+      color: white; font-size: 1.15rem;
+    }
+    .booking-bar .powered {
+      font-size: 0.72rem; color: rgba(255,255,255,0.4);
+    }
+    .booking-bar .powered b {
+      color: var(--gold); font-weight: 700;
+    }
+    .booking-body {
+      padding: 56px 32px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      min-height: 380px;
+    }
+    .widget-mount {
+      width: 100%; max-width: 680px;
+      padding: 48px 24px;
+      border: 2px dashed rgba(0,0,0,0.08);
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(201,168,76,0.03) 0%, rgba(15,31,61,0.02) 100%);
+      text-align: center;
+    }
+    .widget-mount .w-icon {
+      width: 56px; height: 56px; margin: 0 auto 16px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .widget-mount h4 {
+      font-size: 1.3rem; color: var(--navy); margin-bottom: 8px;
+    }
+    .widget-mount p {
+      font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;
+    }
+    .widget-mount code {
+      background: var(--navy); color: var(--gold);
+      font-size: 0.75rem; padding: 8px 18px;
+      border-radius: 6px; font-family: monospace;
+    }
+
+    /* Live Stream section */
+    .stream-sect { background: var(--navy); color: white; }
+    .stream-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px; margin-top: 48px;
+      align-items: center;
+    }
+    .stream-preview {
+      background: #0a0a0a;
+      border-radius: 12px;
+      aspect-ratio: 16/9;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .stream-preview .floor {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, #1e1208 0%, #2d1f10 50%, #3a2a18 100%);
+    }
+    .stream-preview .lines {
+      position: absolute; inset: 0; opacity: 0.08;
+      background:
+        linear-gradient(0deg, transparent 48%, var(--gold) 48%, var(--gold) 52%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, var(--gold) 48%, var(--gold) 52%, transparent 52%);
+    }
+    .live-badge {
+      position: absolute; top: 12px; left: 12px;
+      background: #D32F2F; color: white;
+      font-size: 0.65rem; font-weight: 800;
+      padding: 3px 10px; border-radius: 4px;
+      letter-spacing: 0.08em;
+    }
+    .play-circle {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.25);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .play-circle::after {
+      content: '';
+      width: 0; height: 0;
+      border-left: 16px solid white;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      margin-left: 3px;
+    }
+    .stream-sect .label { color: var(--gold-light); }
+    .stream-sect .sect-title { color: white; }
+    .stream-sect .sect-sub { color: rgba(255,255,255,0.5); }
+    .check-list {
+      list-style: none; margin-top: 28px;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .check-list li {
+      display: flex; align-items: center; gap: 10px;
+      color: rgba(255,255,255,0.7); font-size: 0.9rem;
+    }
+    .check-list li::before {
+      content: '✓';
+      width: 24px; height: 24px; border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 0.72rem; font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* FAQ */
+    .faq-sect { background: var(--cream); }
+    .faq-list {
+      margin-top: 40px; max-width: 740px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .faq-item {
+      background: white;
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700; font-size: 0.95rem;
+      color: var(--navy); cursor: pointer;
+      display: flex; justify-content: space-between;
+      align-items: center; user-select: none;
+    }
+    .faq-q::after {
+      content: '+'; font-size: 1.3rem;
+      color: var(--gold); font-weight: 300;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-a-inner {
+      padding: 0 24px 20px;
+      font-size: 0.88rem; color: var(--text-soft);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { max-height: 320px; }
+
+    /* ================================
+       CONTACT / MAP
+    ================================ */
+    .contact-sect { background: var(--warm-white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px; margin-top: 48px;
+    }
+    .contact-rows {
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .c-row {
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .c-row-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(201,168,76,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+    .c-row h4 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.88rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 2px;
+    }
+    .c-row p, .c-row a {
+      font-size: 0.85rem; color: var(--text-soft);
+      text-decoration: none; line-height: 1.5;
+    }
+    .c-row a:hover { color: var(--gold); }
+    .map-frame {
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+      min-height: 320px;
+    }
+    .map-frame iframe {
+      width: 100%; height: 100%;
+      border: none; min-height: 320px;
+    }
+
+    /* ================================
+       FOOTER
+    ================================ */
+    .site-footer {
+      background: var(--navy);
+      padding: 40px 24px 28px;
+    }
+    .footer-inner {
+      max-width: 1140px; margin: 0 auto;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px;
+      color: rgba(255,255,255,0.35); font-size: 0.78rem;
+    }
+    .footer-inner a {
+      color: var(--gold); text-decoration: none;
+    }
+    .footer-inner a:hover { color: var(--gold-light); }
+
+    /* ================================
+       RESPONSIVE
+    ================================ */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { max-width: 400px; }
+      .about-grid, .court-feat-grid, .stream-grid,
+      .contact-grid { grid-template-columns: 1fr; }
+      .min-cards { grid-template-columns: 1fr; }
+      .court-teaser {
+        grid-template-columns: 1fr;
+        padding: 40px 28px;
+      }
+      .court-mini-features {
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-menu {
+        display: none;
+        position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--navy);
+        flex-direction: column; padding: 20px;
+        border-bottom: 2px solid var(--gold);
+      }
+      .nav-menu.open { display: flex; }
+      .burger { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-wrap">
+      <a href="/" class="nav-brand">
+        <div class="lighthouse-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="13" y="8" width="10" height="22" rx="1" fill="#C9A84C" opacity="0.9"/>
+            <rect x="15" y="4" width="6" height="6" rx="1" fill="#E2C86D"/>
+            <rect x="17" y="1" width="2" height="4" rx="1" fill="#E2C86D"/>
+            <rect x="10" y="30" width="16" height="4" rx="1" fill="#C9A84C" opacity="0.7"/>
+            <rect x="16" y="14" width="4" height="4" rx="0.5" fill="#0F1F3D"/>
+            <rect x="16" y="21" width="4" height="4" rx="0.5" fill="#0F1F3D"/>
+            <line x1="12" y1="6" x2="4" y2="2" stroke="#E2C86D" stroke-width="1" opacity="0.5"/>
+            <line x1="24" y1="6" x2="32" y2="2" stroke="#E2C86D" stroke-width="1" opacity="0.5"/>
+            <line x1="12" y1="8" x2="2" y2="8" stroke="#E2C86D" stroke-width="1" opacity="0.3"/>
+            <line x1="24" y1="8" x2="34" y2="8" stroke="#E2C86D" stroke-width="1" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="nav-brand-text">Britton Baptist<small>Walk in the Light</small></div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/ministries.html" style="color:var(--gold);">Ministries</a></li>
+        <li><a href="/court-rental.html">Court Rental</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/court-rental.html#booking" class="nav-cta">Book a Court</a></li>
+      </ul>
+      <button class="burger" onclick="document.getElementById('navMenu').classList.toggle('open')" aria-label="Menu"><div></div><div></div><div></div></button>
+    </div>
+  </nav>
+
+
+  <section style="padding:120px 24px 60px;background-image:linear-gradient(rgba(15,31,61,0.82),rgba(15,31,61,0.88)),url(/images/sewing-01.jpg);background-size:cover;background-position:center;text-align:center;">
+    <div style="max-width:700px;margin:0 auto;">
+      <nav style="font-size:0.78rem;color:rgba(255,255,255,0.35);margin-bottom:20px;">
+        <a href="/" style="color:var(--gold);text-decoration:none;">Home</a> / <a href="/ministries.html" style="color:var(--gold);text-decoration:none;">Ministries</a> / Sewing &amp; Quilting Club
+      </nav>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3rem);color:white;line-height:1.1;margin-bottom:16px;">Sewing &amp; Quilting Club</h1>
+      <p style="color:rgba(255,255,255,0.5);font-size:1.05rem;line-height:1.7;">Creativity, fellowship, and service — one stitch at a time.</p>
+    </div>
+  </section>
+
+
+  <section class="sect" style="background:var(--cream);">
+    <div class="sect-inner">
+      <h2 class="sect-title">Sewing &amp; Quilting Club</h2>
+      <p style="font-size:0.95rem;color:var(--text-soft);line-height:1.8;max-width:700px;margin-bottom:8px;">One of Britton Baptist Church's most vibrant ministries. Our sewing and quilting club brings together women of all ages to create beautiful quilts, clothing, and crafts — many of which are donated to those in need across Oklahoma City.</p>
+      <p style="font-size:0.95rem;color:var(--text-soft);line-height:1.8;max-width:700px;">With dedicated rooms, sewing machines, and a welcoming community of crafters, our sewing ministry is a place of creativity, fellowship, and service. Beginners and experienced quilters alike are welcome.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;">
+          <img src="/images/sewing-01.jpg" alt="Sewing club at Britton Baptist Church" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-02.jpg" alt="Sewing machines at Britton Baptist Church OKC" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-03.jpg" alt="Quilting at Britton Baptist Church Oklahoma City" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;">
+          <img src="/images/sewing-04.jpg" alt="Sewing ministry Britton Baptist Church" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-05.jpg" alt="Quilting room at Britton Baptist Church" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-06.jpg" alt="Sewing club room Britton Baptist Church OKC" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;">
+          <img src="/images/sewing-07.jpg" alt="Quilts at Britton Baptist Church Oklahoma City" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-08.jpg" alt="Sewing group at Britton Baptist Church" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-09.jpg" alt="Fabric and supplies at Britton Baptist sewing ministry" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;">
+          <img src="/images/sewing-10.jpg" alt="Sewing room at Britton Baptist Church OKC" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-11.jpg" alt="Quilting projects Britton Baptist Church" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+          <img src="/images/sewing-12.jpg" alt="Sewing and knitting club Britton Baptist Church" style="border-radius:8px;width:100%;height:240px;object-fit:cover;" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Other Facilities -->
+  <section class="sect" style="background:var(--cream);">
+    <div class="sect-inner" style="text-align:center;">
+      <h2 class="sect-title">Explore Our Campus</h2>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+        <a href="/sanctuary.html" style="padding:10px 20px;background:var(--navy);color:white;border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Sanctuary</a>
+        <a href="/chapel.html" style="padding:10px 20px;background:var(--navy);color:white;border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Chapel</a>
+        <a href="/daycare.html" style="padding:10px 20px;background:var(--navy);color:white;border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Nursery &amp; Daycare</a>
+        <a href="/sewing-club.html" style="padding:10px 20px;background:var(--navy);color:white;border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Sewing Club</a>
+        <a href="/food-pantry.html" style="padding:10px 20px;background:var(--navy);color:white;border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Food Pantry</a>
+        <a href="/fellowship-hall.html" style="padding:10px 20px;background:var(--navy);color:white;border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Fellowship Hall</a>
+        <a href="/court-rental.html" style="padding:10px 20px;background:var(--gold);color:var(--navy);border-radius:8px;text-decoration:none;font-size:0.85rem;font-weight:600;">Basketball Court</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Britton Baptist Church &middot; 1141 W Britton Rd, Oklahoma City, OK 73114 &middot; <a href="tel:4058423511">(405) 842-3511</a></p>
+      <p>Court booking by <a href="https://sked.earth" target="_blank">Sked.Earth</a> &middot; Streaming by <a href="https://pickup.earth" target="_blank">Pickup.Earth</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => { document.getElementById('navMenu').classList.remove('open'); });
+    });
+  </script>
+
+</body>
+</html>
