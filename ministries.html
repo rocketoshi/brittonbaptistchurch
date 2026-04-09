@@ -934,18 +934,18 @@
           </svg>
         </div>
         <div class="nav-brand-text">
-          Britton Baptist
+          Britton Baptist Church
           <small>Walk in the Light</small>
         </div>
       </a>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/sanctuary.html">Sanctuary</a></li>
         <li><a href="/ministries.html" style="color:var(--gold);">Ministries</a></li>
         <li><a href="/daycare.html">Daycare</a></li>
         <li><a href="/sewing-club.html">Sewing Club</a></li>
         <li><a href="/food-pantry.html">Food Pantry</a></li>
+        <li><a href="/fellowship-hall.html">Fellowship Hall</a></li>
         <li><a href="/court-rental.html">Court Rental</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/court-rental.html#booking" class="nav-cta">Book a Court</a></li>
@@ -957,7 +957,7 @@
   </nav>
 
 
-  <section style="padding:120px 24px 60px;background-image:linear-gradient(rgba(15,31,61,0.85),rgba(15,31,61,0.9)),url(/images/sanctuary-02.jpg);background-size:cover;background-position:center;text-align:center;">
+  <section style="padding:180px 24px 100px;background-image:linear-gradient(rgba(15,31,61,0.85),rgba(15,31,61,0.9)),url(/images/sanctuary-02.jpg);background-size:cover;background-position:center;text-align:center;">
     <div style="max-width:700px;margin:0 auto;">
       <div class="label" style="color:var(--gold);">Ministries & Community</div>
       <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.2rem);color:white;line-height:1.1;margin-bottom:16px;">Serving Oklahoma City Together</h1>
@@ -967,22 +967,37 @@
 
   <section class="sect" style="background:var(--cream);">
     <div class="sect-inner">
-      <div class="min-cards" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-        <article class="min-card" style="background:white;border:1px solid rgba(0,0,0,0.05);border-radius:14px;padding:32px 28px;">
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(44,74,124,0.08);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;">&#9971;</div>
-          <h4 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Worship &amp; Teaching</h4>
-          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.65;">Passionate worship spanning multiple genres and expository Bible teaching. Sunday mornings and evenings, plus Wednesday midweek service with Pastor Belicek.</p>
-        </article>
-        <article style="background:white;border:1px solid rgba(0,0,0,0.05);border-radius:14px;padding:32px 28px;">
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(122,56,40,0.08);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;">&#128102;</div>
-          <h4 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Children &amp; Youth</h4>
-          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.65;">Age-appropriate programs for kids and teens every Wednesday evening and Sunday morning. Building faith, friendships, and character in a safe environment.</p>
-        </article>
-        <article style="background:white;border:1px solid rgba(0,0,0,0.05);border-radius:14px;padding:32px 28px;">
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(201,168,76,0.1);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;">&#129309;</div>
-          <h4 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Missions &amp; Outreach</h4>
-          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.65;">Serving our neighbors locally and globally &mdash; from food drives and community events in OKC to international missions reaching as far as the Philippines.</p>
-        </article>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+        <a href="/sanctuary.html" style="text-decoration:none;color:inherit;">
+          <article style="background:white;border:1px solid rgba(0,0,0,0.05);border-radius:14px;overflow:hidden;transition:all 0.25s;" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='rgba(0,0,0,0.05)';this.style.transform='none'">
+            <img src="/images/sanctuary-01.jpg" alt="Worship at Britton Baptist Church" style="width:100%;height:180px;object-fit:cover;" loading="lazy">
+            <div style="padding:24px 28px;">
+              <h4 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Worship &amp; Teaching</h4>
+              <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.65;">Passionate worship and expository Bible teaching. Sunday mornings and evenings, plus Wednesday midweek service.</p>
+              <span style="color:var(--gold);font-size:0.85rem;font-weight:600;">Our Sanctuary &rarr;</span>
+            </div>
+          </article>
+        </a>
+        <a href="/daycare.html" style="text-decoration:none;color:inherit;">
+          <article style="background:white;border:1px solid rgba(0,0,0,0.05);border-radius:14px;overflow:hidden;transition:all 0.25s;" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='rgba(0,0,0,0.05)';this.style.transform='none'">
+            <img src="/images/daycare-04.jpg" alt="Children and Youth Ministry at Britton Baptist Church" style="width:100%;height:180px;object-fit:cover;" loading="lazy">
+            <div style="padding:24px 28px;">
+              <h4 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Children &amp; Youth</h4>
+              <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.65;">Age-appropriate programs for kids and teens every Wednesday evening and Sunday morning.</p>
+              <span style="color:var(--gold);font-size:0.85rem;font-weight:600;">Nursery &amp; Daycare &rarr;</span>
+            </div>
+          </article>
+        </a>
+        <a href="/food-pantry.html" style="text-decoration:none;color:inherit;">
+          <article style="background:white;border:1px solid rgba(0,0,0,0.05);border-radius:14px;overflow:hidden;transition:all 0.25s;" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='rgba(0,0,0,0.05)';this.style.transform='none'">
+            <img src="/images/food-pantry-01.jpg" alt="Missions and Outreach at Britton Baptist Church" style="width:100%;height:180px;object-fit:cover;" loading="lazy">
+            <div style="padding:24px 28px;">
+              <h4 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Missions &amp; Outreach</h4>
+              <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.65;">Serving our neighbors locally and globally &mdash; from food drives and community events to international missions.</p>
+              <span style="color:var(--gold);font-size:0.85rem;font-weight:600;">Food Pantry &rarr;</span>
+            </div>
+          </article>
+        </a>
       </div>
     </div>
   </section>
@@ -1013,12 +1028,7 @@
   </section>
 
   
-  <!-- Full-width hallway photo -->
-  <div id="full-width-ministries" style="width:100%;height:300px;overflow:hidden;">
-    <img src="/images/hallway-01.jpg" alt="Inside Britton Baptist Church hallway" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
-  </div>
-
-<!-- Our Facilities -->
+  <!-- Our Facilities -->
   <section class="sect" style="background:var(--warm-white);">
     <div class="sect-inner">
       <div class="label">Our Facilities</div>
